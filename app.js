@@ -6,7 +6,7 @@ const filterOption = document.querySelector(".filter-todo");
 
 //Event Listeners
 document.addEventListener("DOMContentLoaded", getTodos);
-todoButton.addEventListener("click", addTodo);
+todoButton.addEventListener("click", addTodo); 
 todoList.addEventListener("click", deleteTodo);
 filterOption.addEventListener("click", filterTodo);
 
@@ -42,6 +42,7 @@ function addTodo(e) {
   todoList.appendChild(todoDiv);
 }
 
+
 function deleteTodo(e) {
   const item = e.target;
 
@@ -61,6 +62,7 @@ function deleteTodo(e) {
     console.log(todo);
   }
 }
+
 
 function filterTodo(e) {
   const todos = todoList.childNodes;

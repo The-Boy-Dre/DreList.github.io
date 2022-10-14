@@ -1,3 +1,0 @@
-
-
-const todoInput = document.querySelector()
